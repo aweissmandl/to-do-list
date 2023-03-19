@@ -1,14 +1,22 @@
 import React from 'react';
 import './to-do.css';
-import AddItem from './AddItem';
 
 
-function ToDoList() {
+function GetAddItem(props) {
+  return (
+    <div>
+      <props.AddItem />
+    </div>
+  );
+};
+
+
+function ToDoList(props) {
   return (
     <div id="myDIV" className="header">
       <h2>My To Do List</h2>
       <input type="text" id="myInput" placeholder="Title..." />
-      <span onClick={AddItem} className="addBtn">
+      <span onClick={props.AddItem} className="addBtn">
         Add
       </span>
 
@@ -25,16 +33,9 @@ function ToDoList() {
 }
 
 
-AddItems() {
-  return (
-    <div>
-            <h1>Hello from MyComponent!</h1>
-      <AddItem />
-    </div>
-  );
-};
 
-export {AddItem,ToDoList};
+
+export default ToDoList;
 
 
 

@@ -1,7 +1,7 @@
 // Create a new list item when clicking on the "Add" button
 import React, { useRef, useState, useEffect } from 'react';
 
-function AddItem() {
+function AddItem(props) {
   const [inputValue, setInputValue] = useState('');
   const myInputRef = useRef(null);
   const myULRef = useRef(null);

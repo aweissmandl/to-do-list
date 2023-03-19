@@ -1,13 +1,16 @@
 import React from "react";
-import ToDoList from "./components/to-do-list";
 import './App.css';
-import closeItem from './components/CloseItem';
+import ToDoAdd from "./components/ToDo-Add-(combined)";
+import CloseItem from './components/CloseItem';
+import CheckItem from './components/CheckItem';
 
 
 function App() {
   return (
     <div>
-      <ToDoList />
+      <ToDoAdd />
+      <CloseItem/>
+      <CheckItem/>
     </div>
   );
 }
