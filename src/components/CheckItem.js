@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 
 function CheckItem() {
   const [todos, setTodos] = useState([
-    { id: 1, text: 'Learn React' },
-    { id: 2, text: 'Build a project' },
-    { id: 3, text: 'Deploy project' },
+    { id: 1, text: 'object.props' },
+    { id: 2, text: 'object.props' },
+    { id: 3, text: 'object.props' },
   ]);
 
   const handleToggle = (ev) => {
